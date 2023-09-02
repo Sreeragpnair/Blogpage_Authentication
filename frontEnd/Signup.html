@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class = "mainpage">
+
+    <h1>Sign Up</h1>
+    <form action="/signup" method="post">
+    <div class="input_box">
+        <label for="userName">Username <input id="userName" type="text" name="username" placeholder="Enter your name" onkeyup="validateName()"></label>
+        <span class="span1" id="userName-error"></span>
+    </div>
+    <div class="input_box">
+        <label for="email">email <input id="email" type="text" placeholder="Enter your mail" name="email" onkeyup="validateEmail()"></label>
+        <span class="span2" id="email-error"></span>
+    </div>
+    <div class="input_box">
+        <label for="password">Password <input id="password" type="password" name="password" onkeyup="validatePassword()"></label>
+        <span class="span3" id="password-error"></span>
+    </div>
+    <div class="input_box">
+        <label for="repeat">Repeat Password <input id="repeat" type="password" name="repeatPassword" onkeyup="validateRepeat()"></label>
+        <span class="span4" id="repeat-error"></span>
+    </div>
+    <div class="button_container">
+    <button class="button" id="submit" type="submit" onclick="return validateForm()"><strong>Submit</strong></button>
+</div>
+</form>
+    <div class="text-center">
+        <a href="Signin.html">Already having an account ?  Sign In</a>
+    </div>
+  </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

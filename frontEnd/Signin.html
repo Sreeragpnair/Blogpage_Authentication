@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class = "mainpage">
+
+    <h1>Sign In</h1>
+    <form action="/signin" method="post">
+
+      <div class="input_box">
+        <label for="userName">Username <input id="userName" type="text" name="username" placeholder="Enter your name" onkeyup="validateName()"></label>
+        <span class="span5" id="userName-error"></span>
+    </div>
+    <div class="input_box">
+        <label for="password">Password <input id="password" type="password" name="password" onkeyup="validatePassword()"></label>
+        <span class="span6" id="password-error"></span>
+    </div>
+
+    <div class="button-container">
+    <button id="submit" type="submit" onclick="return validateForm()"><strong>Submit</strong></button>
+    </div>
+    </form>
+        <div class="text-center">
+          <a href="Signup.html">Don't have an account ?  Sign Up</a>
+        </div>
+  </div>
+
+
+    <script src="login.js"></script>
+</body>
+</html>
